@@ -1,0 +1,79 @@
+.farm {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 2px;
+    border: 3px solid;
+}
+
+
+.choice aside {
+    display: block;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    background-color: rgb(132, 132, 133);
+    margin-left: 150px;
+    margin-top: 5%;
+    box-sizing: border-box;
+    max-width: fit-content;
+    border:  2px solid black;    
+}
+
+
+.circle {
+    float: right;
+    border: 10px solid rgb(0, 0, 0);
+    border-bottom: 10px solid blue;
+    border-top: 10px solid red;
+    border-right: 10px solid yellow;
+    border-left: 10px solid green;
+    background-color: #adadad;  
+    height: 300px;
+    border-radius:150%;
+    width: 300px;
+    margin-right: 20%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.circle2 {
+    float: right;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: #FFFFFF;
+    height: 300px;
+    border-radius:150%;
+    width: 300px;
+    margin-right: 10%;
+    
+
+}
+
+textarea {
+    border: none;
+    display: block;
+    width: 100%;
+    height: 100px;
+    font-family: inherit;
+    padding: 10px;
+    margin: 0 0 20px;
+    font-size: 16px;
+}
+
+.tag {
+    background-color: yellow;
+    color: black;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 0 5px 10px 0;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.tag.highlight {
+    background-color: #273c75;
+}
