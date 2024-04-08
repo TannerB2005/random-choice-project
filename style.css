@@ -31,7 +31,8 @@
     height: 300px;
     border-radius:150%;
     width: 300px;
-    margin-right: 20%;
+    margin-right: 42%;
+    margin-top: 6%;
     animation: spin 2s linear infinite;
 }
 

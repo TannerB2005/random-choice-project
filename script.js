@@ -1,7 +1,5 @@
-
-
 const tagsEl = document.getElementById('tags')
-const textarea = document.getElementById('textarea');
+const textarea = document.getElementById('textarea')
 
 textarea.focus()
 
@@ -52,12 +50,14 @@ function randomSelect() {
 
             highlightTag(randomTag)
         }, 100)
+        alarm()
     }, times * 100)
+    
 }
 
 function pickRandomTag() {
     const tags = document.querySelectorAll('.tag')
-    return tags[Math.floor(Math.random * tags.length)]
+    return tags[Math.floor(Math.random() * tags.length)]
 }
 
 function highlightTag(tag) {
@@ -66,4 +66,9 @@ function highlightTag(tag) {
 
 function unHightlightTag(tag) {
     tag.classList.remove('highlight')
+}
+
+function alarm() {
+    document.getElementsByClassName("highlight").item(0).setAttribute("id", "highlight");
+    confirm(document.getElementById("highlight").innerHTML + " wins!");
 }
